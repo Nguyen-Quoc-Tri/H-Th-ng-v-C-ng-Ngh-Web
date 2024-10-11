@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5B</title>
+    <style>
+        div.hop {
+            width: 764px;
+            height: 268px;
+            padding: 10px;
+            margin: 1px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(3, 3, 3);
+        }
+        
+        div.hop p {
+            padding: 0px;
+            margin: 0px;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        div.hop td {
+            margin: 1px;
+        }
+        
+        div.hop table {
+            margin: 0px;
+            text-align: center;
+            border: 1px solid rgba(155, 151, 151, 0.733);
+            border-collapse: collapse;
+        }
+        
+        div.hop th {
+            border-top: 2px solid purple;
+        }
+        
+        div.hop th:nth-child(8) {
+            border-right: 2px solid rgb(29, 1, 29);
+        }
+        
+        div.hop tr:nth-child(2) td:nth-child(2),
+        tr:nth-child(3) td:nth-child(2),
+        tr:nth-child(6) td:nth-child(5),
+        td:nth-child(8) {
+            border-right: 2px solid rgb(29, 1, 29);
+        }
+        
+        div.hop tr:nth-child(10) td:nth-child(2) {
+            border-right: 2px solid rgb(29, 1, 29);
+            border-bottom: 2px solid rgb(29, 1, 29);
+        }
+        
+        div.hop tr:nth-child(10) td:nth-child(1) {
+            border-bottom: 2px solid rgb(29, 1, 29);
+        }
+        
+        div.hop td:first-child,
+        th:first-child {
+            width: 40px;
+            height: 18px;
+            text-align: center;
+            border-left: 2px solid purple;
+        }
+        
+        div.hop tr:nth-child(4) td:nth-child(3) {
+            width: 70px;
+        }
+        
+        div.hop tr:nth-child(4) td:nth-child(2) {
+            width: 90px;
+        }
+        
+        div.hop th:nth-child(4),
+        th:nth-child(5),
+        th:nth-child(6),
+        th:nth-child(7),
+        td {
+            text-align: left;
+            vertical-align: top;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hop">
+        <p>All time list central</p>
+        <table border="1">
+
+            <tr>
+                <!--dòng 1-->
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+
+            <tr>
+                <!--dòng 2-->
+                <td><strong>6:00</strong></td>
+                <td colspan="7">National news</td>
+            </tr>
+
+            <tr>
+                <!--dòng 3-->
+                <td><strong>6:30</strong></td>
+                <td colspan="7">Local News</td>
+            </tr>
+
+            <tr>
+                <!--dòng 4-->
+                <td><strong>7:00</strong></td>
+                <td rowspan="2">Opera Fest</td>
+                <td rowspan="2">Radio U</td>
+                <td rowspan="2">Science</td>
+                <td rowspan="2">The living world</td>
+                <td>World Play</td>
+                <td>Agri Week</td>
+                <td rowspan="2">Flok Fest</td>
+            </tr>
+
+            <tr>
+                <!--dòng 5-->
+                <td><strong>7:30</strong></td>
+                <td>Brain Stew</td>
+                <td>Bismark Forum</td>
+            </tr>
+
+            <tr>
+                <!--dòng 6-->
+                <td><strong>8:00</strong></td>
+                <td rowspan="4" colspan="4">The Class musical connection</td>
+                <td>Old time Radio</td>
+                <td rowspan="4">Saturday Nite Jazz</td>
+                <td rowspan="4">The Indie Connection</td>
+            </tr>
+
+            <tr>
+                <!--dòng 7-->
+                <td><strong>8:30</strong></td>
+                <td>The Inner Mind</td>
+            </tr>
+
+            <tr>
+                <!--dòng 8-->
+                <td><strong>9:00</strong></td>
+                <td>Open Mike Nite</td>
+            </tr>
+
+            <tr>
+                <!--dòng 9-->
+                <td><strong>9:30</strong></td>
+                <td>Relax</td>
+            </tr>
+
+            <tr>
+                <!--dòng 10-->
+                <td><strong>10:00</strong></td>
+                <td colspan="7">World News Feed</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

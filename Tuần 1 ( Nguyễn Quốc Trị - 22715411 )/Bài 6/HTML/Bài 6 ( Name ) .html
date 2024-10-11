@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            height: 400px;
+            width: 300px;
+            border: 1px solid gray;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .form-column {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        
+        input {
+            width: 210px;
+            height: 22px;
+        }
+        
+        .Favorite {
+            width: 100px;
+        }
+        
+        .submit {
+            height: 33px;
+            width: 100px;
+            padding: 10px;
+            margin-left: 30px;
+            align-items: center;
+        }
+        
+        .DOB {
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="form-column">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-column">
+            <label for="Telephone Number">Telephone Number:</label>
+            <input type="text" id="Telephone Number" name="Telephone">
+        </div>
+
+        <div class="form-column">
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email">
+        </div>
+
+        <div class="form-column">
+            <label for="Favorite Color">Favorite Color:</label>
+            <input type="color" id="color" class="Favorite" name="color" value="#0000ff">
+        </div>
+
+        <div class="form-column">
+            <label for="Date of Birth">Date of Birth:</label>
+            <input type="date" id="Date of Birth" class="DOB" name="Date of Birth" value="2015-07-16">
+        </div>
+
+        <div class="submit">
+            <input type="submit" class="submit" value="Submit">
+        </div>
+
+    </div>
+</body>
+
+</html>

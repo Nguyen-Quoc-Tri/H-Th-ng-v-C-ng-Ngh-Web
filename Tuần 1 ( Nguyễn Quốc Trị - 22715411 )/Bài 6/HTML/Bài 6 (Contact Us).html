@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        div.hop {
+            width: 740px;
+            height: 416px;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+        }
+        
+        .flex-form {
+            width: 708px;
+            height: 216px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .flex-form1 {
+            width: 708px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .form-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        label {
+            width: 100px;
+            text-align: left;
+            margin-right: 10px;
+        }
+        
+        input,
+        textarea,
+        input[type="file"] {
+            margin: 1px;
+            width: 100%;
+            padding: 1px;
+        }
+        
+        #to {
+            width: 200px;
+            margin-bottom: 0px;
+            padding: 1px;
+        }
+        
+        .email-input {
+            width: 200px;
+            margin-bottom: 0px;
+            padding: 1px;
+        }
+        
+        #message {
+            width: 400px;
+            height: 100px;
+            padding: 1px;
+            margin-bottom: 0px;
+        }
+        
+        .file-input {
+            flex: 1px;
+        }
+        
+        .label-type,
+        .label-type1 {
+            width: 156px;
+            text-align: left;
+            margin-right: 0px;
+        }
+        
+        select {
+            width: 150px;
+            padding: 2px;
+            margin-left: -13px;
+        }
+        
+        .check-input {
+            width: 100px;
+            margin-right: -50px;
+            margin-left: -56px;
+        }
+        
+        .action-input {
+            width: 110px;
+            padding: 2px;
+            margin-top: 1px;
+        }
+        
+        .check-text {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hop">
+        <h2>Contact Us</h2>
+        <fieldset class="flex-form">
+
+            <legend>Your message:</legend>
+            <div class="form-row">
+                <label for="to">To:</label>
+                <input type="text" id="to" class="to" name="to" value="Example Cafe">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Your email:</label>
+                <input type="text" id="email" class="email-input" name="email">
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" class="message" name="mess"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="file">Attach File:</label>
+                <input type="file" id="file" class="file-input" name="file" multiple accept="image/png, image/jpeg">
+            </div>
+
+        </fieldset>
+
+        <fieldset class="flex-form1">
+
+            <legend>How you found us:</legend>
+
+            <div class="form-row">
+                <label class="label-type" for="hear">How did you hear of us</label>
+                <select name="hear">
+                    <option value="1">Google</option>
+                </select>
+
+            </div>
+
+            <div class="form-row">
+                <label class="label-type1" for="newsletter">Newsletter</label>
+                <input type="checkbox" class="check-input" value="check" checked> Ensure this box is checked if you would like to receive email updates
+
+            </div>
+
+        </fieldset>
+
+        <form action="">
+            <input type="submit" class="action-input" value="Send Message">
+        </form>
+    </div>
+
+</body>
+
+</html>
